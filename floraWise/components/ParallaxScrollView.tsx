@@ -48,6 +48,7 @@ export default function ParallaxScrollView({
         scrollEventThrottle={16}
         style={{height: '100%', width: '100%'}}
         scrollIndicatorInsets={{ bottom }}
+        keyboardShouldPersistTaps="handled"
         contentContainerStyle={{ paddingBottom: bottom }}>
         <Animated.View
           style={[

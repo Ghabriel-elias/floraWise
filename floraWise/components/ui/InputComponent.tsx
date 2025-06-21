@@ -154,13 +154,12 @@ export const InputComponent = ({
           </TouchableOpacity>
         ) : null}
       </View>
-      <View style={{height: textError ? 20 : 0}}>
+      <View style={{height: textError ? 20 : 0, marginTop: textError ? 3 : 0, marginBottom: textError ? 4 : 0}}>
         {showError && textError && (
           <TextComponent
             color='red'
             fontFamily='regular'
             fontSize={11}
-            style={{marginTop: 2, marginBottom: 4}}
           >
             {textError}
           </TextComponent>
